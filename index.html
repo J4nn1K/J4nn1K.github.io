@@ -1,157 +1,225 @@
-<html>
+<!DOCTYPE HTML>
+<html lang="en">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-131545423-1"></script> -->
-  <!-- <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-131545423-1');
-  </script> -->
-  <!-- Meta -->
-  <meta charset="utf-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
   <title>Jannik Grothusen</title>
-  <!-- Style -->
-  <style type="text/css">
-    body {
-      margin: 1em;
-      max-width: 46em;
-      font: .8em/1.5;
-    }
 
-    h1,
-    h2 {
-      line-height: 1.5;
-    }
+  <meta name="author" content="Jannik Grothusen">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon"> -->
 
-    div.title {
-      font-weight: bold;
-    }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
-    li {
-      margin: 1em auto;
-      line-height: 1.5;
-    }
-  </style>
 </head>
 
 <body>
+  <table
+    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <!-- HERO -->
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr style="padding:0px">
+                <td style="padding:2.5%;width:63%;vertical-align:middle">
+                  <p class="name" style="text-align: center;">
+                    Jannik Grothusen
+                  </p>
+                  <p>I'm currently with <a href="https://www.joinef.com/">Entrepreneur First</a> in London, where I'm working on real-world applications for robotic learning.</p>
+                  <p>
+                    I'm a graduate student at <a href="https://www.tuhh.de/">TU Hamburg</a> and <a href="https://www.berkeley.edu/">UC Berkeley</a>, where I study Mechatronics with a focus on Deep Learning and Control Theory.
+                    <!-- <a href="xxx">xxx</a> -->
+                  </p>
+                  <p>
+                    Previously, I was building robotic kitchens at <a href="https://goodbytz.com/">GoodBytz</a> as one of their first employees. 
+                    Before that, I worked on autonomous electron accelerators at <a href="https://www.desy.de/index_eng.html">DESY</a>.
+                  </p>
+                  <p style="text-align:center">
+                    <a href="mailto:jannik.grothusen@tuhh.de">Email</a> &nbsp;/&nbsp;
+                    <a href="/">CV</a> &nbsp;/&nbsp;
+                    <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp; -->
+                    <!-- <a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Scholar</a> &nbsp;/&nbsp; -->
+                    <!-- <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp;/&nbsp; -->
+                    <a href="https://www.linkedin.com/in/jannik-grothusen/">LinkedIn</a> &nbsp;/&nbsp;
+                    <a href="https://calendly.com/jannik-grothusen/">Calendly</a> &nbsp;/&nbsp;
+                    <a href="https://github.com/j4nn1k/">GitHub</a>
 
-  <h1>Jannik Grothusen</h1>
+                  </p>
+                </td>
+                <td style="padding:2.5%;width:40%;max-width:40%">
+                  <a href="images/IMG_5790.jpg"><img
+                      style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo"
+                      src="images/IMG_5790.jpg" class="hoverZoomLink"></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- RESEARCH -->
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:20px;width:100%;vertical-align:middle">
+                  <h2>Research</h2>
+                  <p>
+                    I'm interested in computer vision, machine learning, and control theory. Most of my research is about learning-based control for phyiscal systems.
+                    The most interesting projects are <span class="highlight">highlighted</span>.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- CONTENT -->
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
 
-  <div>
-    <a href="https://www.linkedin.com/in/jannik-grothusen/">[LinkedIn]</a>
-    <a href="https://github.com/J4nn1K">[GitHub]</a>
-  </div>
+              <tr onmouseout="recon_stop()" onmouseover="recon_start()" bgcolor="#ffffd0">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <img src='images/transformer-mpc.png' width="160">
+                  </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <span class="papertitle">Learning Model Predictive Control with Attention for Real-World Navigation</span>
+                  <br>
+                  <em>Research</em>, UC Berkeley, 2023
+                  <br>
+                  <a href="/files/transformer-mpc.pdf">Paper</a>
+                  /
+                  <a href="https://github.com/J4nn1K/transformer-mpc">Code</a>
+                  <p></p>
+                  <p>
+                    Integration of attention mechanisms into MPC for a learnable control policy.
+                  </p>
+                </td>
+              </tr>
 
-  <p> I am trying to make a difference in the future of AI and robotics.
-  </p>
-  <p> Previously, I studied Mechatronics at TU Hamburg and Computer Science at UC Berkeley. <br>I was working on robot kitchens at <a href="https://goodbytz.com/">GoodBytz</a> and autonomous electron accelerators at <a href="https://www.desy.de/index_eng.html">DESY</a>. <br>My research interests lie in control theory and robot learning.
-  </p>
+              <tr onmouseout="recon_stop()" onmouseover="recon_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <img src='images/desy.png' width="160">
+                  </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <span class="papertitle">Machine Learning toward Autonomous Accelerators</span>
+                  <br>
+                  <em>Internship</em>, DESY, 2022
+                  <br>
+                  <a href="https://publikationen.bibliothek.kit.edu/1000141966">Website</a>
+                  /
+                  <a href="/files/desy-report.pdf">Report</a>
+                  <p></p>
+                  <p>
+                    Reinforcement learning for the automatic start-up of electron linear accelerators.
+                  </p>
+                </td>
+              </tr>
 
-  <!-- <h2>Selected Papers</h2>
-  <ul>
-    <li>
-      <div class="title">Robot Learning with Sensorimotor Pre-training</div>
-      <div>Ilija Radosavovic, Baifeng Shi, Letian Fu, Ken Goldberg, Trevor Darrell, Jitendra Malik
-        <div>
-          <a href="https://arxiv.org/abs/2306.10007">[arXiv]</a>
-          <a href="https://robotic-pretrained-transformer.github.io/">[website]</a>
-        </div>
-      </div>
-    </li>
-    <li>
-      <div class="title">Learning Humanoid Locomotion with Transformers</div>
-      <div>Ilija Radosavovic, Tete Xiao, Bike Zhang, Trevor Darrell, Jitendra Malik, Koushil Sreenath
-        <div>
-          <a href="https://arxiv.org/abs/2303.03381">[arXiv]</a>
-          <a href="https://humanoid-transformer.github.io">[website]</a>
-        </div>
-      </div>
-    </li>
-    <li>
-      <div class="title">Real-World Robot Learning with Masked Visual Pre-training</div>
-      <div>Ilija Radosavovic, Tete Xiao, Stephen James, Pieter Abbeel, Jitendra Malik, Trevor Darrell
-        <div>
-          <a href="https://arxiv.org/abs/2210.03109">[arXiv]</a>
-          <a href="https://tetexiao.com/projects/real-mvp">[website]</a>
-          <a href="https://github.com/ir413/mvp">[code]</a>
-        </div>
-      </div>
-    </li>
-    <li>
-      <div class="title">Learning to Learn with Generative Models of Neural Network Checkpoints</div>
-      <div>William Peebles, Ilija Radosavovic, Tim Brooks, Alexei Efros, Jitendra Malik</div>
-      <div>
-        <a href="https://arxiv.org/abs/2209.12892">[arXiv]</a>
-        <a href="https://www.wpeebles.com/Gpt">[website]</a>
-        <a href="https://github.com/wpeebles/G.pt">[code]</a>
-      </div>
-    </li>
-    <li>
-      <div class="title">Masked Visual Pre-training for Motor Control</div>
-      <div>Tete Xiao, Ilija Radosavovic, Trevor Darrell, Jitendra Malik</div>
-      <div>
-        <a href="https://arxiv.org/abs/2203.06173">[arXiv]</a>
-        <a href="https://tetexiao.com/projects/mvp">[website]</a>
-        <a href="https://github.com/ir413/mvp">[code]</a>
-      </div>
-    </li>
-  </ul> -->
+              <tr onmouseout="recon_stop()" onmouseover="recon_start()">
+                <!-- bgcolor="#ffffd0" -->
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <img src='images/thesis1.png' width="160">
+                  </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <span class="papertitle">Motion Planning and Control for Autonomous Grasping with an Underwater Robot</span>
+                  <br>
+                  <em>Bachelor's Thesis</em>, TU Hamburg, 2022
+                  <br>
+                  <a href="/files/bachelors-thesis.pdf">Thesis</a>
+                  /
+                  <a href="/files/bachelors-theisis-presentation.pdf">Presentation</a>
+                  <p></p>
+                  <p>
+                    A Control Architecture for Autonomous Grasping with a Micro Underwater Robot.
+                  </p>
+                </td>
+              </tr>
 
-  <h2>Projects</h2>
-  <ul>
-    <li>
-      <div class="title">Learning Model Predictive Control with Attention for Real-World Navigation</div>
-      <div>Integration of attention mechanisms into model predictive control for a learnable control policy.
-      </div>
-      <div>
-        <a href="https://github.com/J4nn1K/transformer-mpc">[Code]</a>
-        <a href="/files/cs280-final-project.pdf">[Paper]</a>
-      </div><a>
-      </a>
-    </li>
-    <li>
-      <div class="title">MPC for Swing-up and Balancing of an Underactuated Inverted Double Pendulum</div>
-      <div>Final project of Francesco Borrelli's course "Experiential Advanced Control Design" at UC Berkeley.
-      </div>
-      <div>
-        <a href="https://github.com/J4nn1K/me231a-final-project">[Code]</a>
-        <a href="/files/me231a-final-project.pdf">[Paper]</a>
-      </div><a>
-      </a>
-    </li>
-    <li>
-      <div class="title">Machine Learning toward Autonomous Accelerators</div>
-      <div>Reinforcement learning for the automatic start-up of electron linear accelerators.
-      </div>
-      <div>
-        <a href="https://publikationen.bibliothek.kit.edu/1000141966">[Website]</a>
-        <a href="/files/desy-report-signed.pdf">[Report]</a>
-      </div><a>
-      </a>
-    </li>
-    <li>
-      <div class="title">Motion Planning and Control for Autonomous Grasping with an Underwater Robot</div>
-      <div>A Control Architecture for Autonomous Grasping with a Micro Underwater Robot.
-      </div>
-      <div>
-        <a href="/files/bachelors-thesis.pdf">[Thesis]</a>
-        <a href="/files/bachelors-theisis-presentation.pdf">[Presentation]</a>
-      </div><a>
-      </a>
-    </li>
-  </ul>
-  
-  <!-- <a>
+            </tbody>
+          </table>
+          <!-- MISCELLANEA -->
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tbody>
+              <tr>
+                <td>
+                  <h2>Miscellanea</h2>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- CONTENT -->
+          <table width="100%" align="center" border="0" cellpadding="20">
+            <tbody>
+              
+              <tr onmouseout="recon_stop()" onmouseover="recon_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <img src='images/alexandria.png' width="160">
+                  </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <span class="papertitle">Talk and Q&A at Alexandria's Cognitive Robotics Event</span>
+                  <br>
+                  <em>Event</em>, Munich, 2023
+                  <br>
+                  <a href="https://www.linkedin.com/feed/update/urn:li:activity:7138128422618189824/">Post</a>
+                  <p></p>
+                  <p>
+                    Presenting my thoughts on Google DeepMind's Robotic Transformer RT-2 alongside its lead author Yevgen Chebotar to a group of interested students. 
+                  </p>
+                </td>
+              </tr>
 
-  </a> -->
-  <!-- <p><a>For a complete list of publications and tech reports, please see my </a><a
-      href="https://scholar.google.com/citations?user=UKpinl8AAAAJ&amp;hl=en">Google Scholar</a>.
-  </p> -->
+              <!-- <tr onmouseout="recon_stop()" onmouseover="recon_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <img src='images/gsab.png' width="160">
+                  </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <span class="papertitle">Student Initiatives</span>
+                  <br>
+                  <a href="https://www.linkedin.com/feed/update/urn:li:activity:7138128422618189824/">German Student Association at Berkeley</a>
+                  <p></p>
+                  <p>
+                    Presenting my thoughts on Google DeepMind's Robotic Transformer RT-2 alongside its lead author Yevgen Chebotar to a group of interested students. 
+                  </p>
+                </td>
+              </tr> -->
+
+            </tbody>
+          </table>
+          <!-- <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:0px">
+                  <br>
+                  <p style="text-align:right;font-size:small;">
+                    Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source
+                      code</a>. <strong>Do not</strong> scrape the HTML from this page itself, as it includes analytics
+                    tags that you do not want on your own website &mdash; use the github code instead. Also, consider
+                    using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a
+                      href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table> -->
+        </td>
+      </tr>
+  </table>
 </body>
 
 </html>
