@@ -89,24 +89,24 @@ p,
 } */
 
 a {
-  font-family: 'Inter', Verdana, Helvetica, sans-serif;
+  font-family: 'Inter', Helvetica, sans-serif;
   font-size: 14px;
 }
 
 strong {
-  font-family: 'Inter', Verdana, Helvetica, sans-serif;
+  font-family: 'Inter', Helvetica, sans-serif;
   font-size: 14px;
 }
 
 h2 {
   margin: 0;
   font-weight: 600;
-  font-family: 'Inter', Verdana, Helvetica, sans-serif;
+  font-family: 'Inter', Helvetica, sans-serif;
   font-size: 22px;
 }
 
 .papertitle {
-  font-family: 'Inter', Verdana, Helvetica, sans-serif;
+  font-family: 'Inter', Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 600;
 }
@@ -114,7 +114,7 @@ h2 {
 .name {
   padding-top: 20px;
   margin: 0;
-  font-family: 'Inter', Verdana, Helvetica, sans-serif;
+  font-family: 'Inter', Helvetica, sans-serif;
   font-size: 32px;
   font-weight: 600;
 }
