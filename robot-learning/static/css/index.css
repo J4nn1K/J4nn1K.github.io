@@ -71,7 +71,9 @@ body {
 }
 
 .publication-authors a {
-   color: hsl(204, 86%, 53%) !important;
+   color: #1772d0 !important;
+   /* color: hsl(204, 86%, 53%) !important; */
+   
 }
 
 .publication-authors a:hover {
@@ -86,7 +88,7 @@ body {
 }
 
 .publication-authors {
-  /*color: #4286f4;*/
+  color: #1772d0;
 }
 
 .publication-video {
@@ -154,4 +156,24 @@ body {
 }
 #interpolation-image-wrapper img {
   border-radius: 5px;
+}
+
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #1772d0;
+  /* border-bottom: 1px solid; */
+  text-decoration: underline;
+  /* text-decoration: none; */
+}
+a:visited {
+  text-decoration: none;
+}
+
+.button.is-dark:hover {
+  text-decoration: none;
 }
