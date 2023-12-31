@@ -6,7 +6,7 @@
   <meta name="description" content="">
   <!-- <meta name="keywords" content=""> -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Future of Robot Control Systems</title>
+  <title>The Future of Robot Control</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -23,7 +23,7 @@
   <script src="/robot-learning/static/js/bulma-carousel.min.js"></script>
   <script src="/robot-learning/static/js/bulma-slider.min.js"></script>
   <script src="/robot-learning/static/js/index.js"></script>
-  
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XGFNH3J74F"></script>
   <script>
@@ -43,37 +43,18 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">The Future of Robot Control Systems</h1>
+            <h1 class="title is-1 publication-title">The Future of Robot Control</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a href="https://j4nn1k.github.io">Jannik J. Grothusen</a></span>
             </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Dec 31, 2023</span>
+            </div>
             <br>
-            <!-- <div class="is-size-5 publication-authors">
-              <span class="author-block">TBD Robotics</span>
-            </div> -->
 
             <div class="column has-text-centered">
               <div class="publication-links">
-                <!-- PDF Link. -->
-                <!-- <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span> -->
-                <!-- <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span> -->
                 <!-- Video Link. -->
                 <span class="link-block">
                   <a href="https://www.loom.com/share/95c7d0a9ccb74c4a8131b5a015a7dc42?sid=72a7ac8f-5a29-419c-b141-640637583053"
@@ -83,7 +64,6 @@
                         <path fill="white"
                           d="M15 7.222h-4.094l3.546-2.047-.779-1.35-3.545 2.048 2.046-3.546-1.349-.779L8.78 5.093V1H7.22v4.094L5.174 1.548l-1.348.779 2.046 3.545-3.545-2.046-.779 1.348 3.546 2.047H1v1.557h4.093l-3.545 2.047.779 1.35 3.545-2.047-2.047 3.545 1.35.779 2.046-3.546V15h1.557v-4.094l2.047 3.546 1.349-.779-2.047-3.546 3.545 2.047.779-1.349-3.545-2.046h4.093L15 7.222zm-7 2.896a2.126 2.126 0 110-4.252 2.126 2.126 0 010 4.252z" />
                       </svg>
-                      <!-- <i class="fab fa-youtube"></i> -->
                     </span>
                     <span>Video</span>
                   </a>
@@ -98,14 +78,6 @@
                     <span>Code</span>
                   </a>
                 </span>
-                <!-- Dataset Link. -->
-                <!-- <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span> -->
                 </a>
               </div>
             </div>
@@ -140,18 +112,21 @@
           <!-- <h2 class="title is-3">Abstract</h2> -->
           <div class="content has-text-justified">
             <p>
-              <b>TL;DR</b> I'm finetuning Octo to new observation and action spaces for ALOHA/ACT's <i>Transfer Cube</i>
+              <b>TL;DR</b> - I'm finetuning Octo to a new observation and action space for ALOHA's <i>Transfer Cube</i>
               task.
             </p>
+
+
             <p>
-              This year between christmas and NYE I spent a few days to figure out a way to demonstrate why robot
-              learning is amazing. This page shows is the result. I hope you enjoy!
-            </p>
-            <p>
-              This demo is combining three major breakthrougs which happened in robotics in 2023. A low-cost open source
+              This year after christmas I spent a few days to figure out a way to demonstrate what I believe
+              to be the future of general robot control: robot learning. The demo is combining three major breakthrougs
+              which happened in robotics in 2023. A low-cost open source
               manipulation setup [1], the first large scale robotic dataset [2] and a powerful generalist control policy
               [3].
-              I want to show how easy it will be to teach robots skills in the future.
+            </p>
+            <p>
+              The Loom video provides a higher level overview and this web page highlights some of the
+              technical details. I hope you enjoy!
             </p>
           </div>
         </div>
@@ -169,36 +144,21 @@
       <div class="columns is-centered">
         <div class="column is-full-width">
 
-          <h2 class="title is-3">Setup</h2>
-          <p>
-            xxx </p>
-          <br>
-
-          <h3 class="title is-4">Task Definition</h3>
+          <h2 class="title is-3">Environment</h2>
           <div class="content has-text-justified">
             <p>
-              xxxx
+              To demonstrate the capabilities of general robot policies I chose a simulation environment based on <i>A
+                Low-cost Open-source Hardware System for Bimanual Teleoperation</i> [1].
+              One of its five design principles is versatility - it can be applied to a wide range of fine manipulation
+              tasks with real-world objects. This makes a perfect playground for demonstrating robot control abilities.
             </p>
-            <!-- <br>
-            <div>
-              <img src="/robot-learning/static/images/cube_transfer.png">
-            </div> -->
-            <br>
           </div>
-
-          <h2 class="title is-3">Finetuning</h2>
-          <p>
-            to a new observation space (single camera + proprio) and new action space (bimanual) using a simulated ALOHA
-            cube handover dataset
-          </p>
-          <br>
-
           <h3 class="title is-4">Task Definition</h3>
           <div class="content has-text-justified">
             <p>
               For the simulated task <i>Transfer Cube</i>, the right arm needs to first pick up the red cube lying on
-              the
-              table, then place it inside the gripper of the other arm. Due to the small clearance between the cube and
+              the table, then place it inside the gripper of the other arm. Due to the small clearance between the cube
+              and
               the left gripper (around 1cm), small errors could result in collisions and task failure [1].
             </p>
             <br>
@@ -208,12 +168,35 @@
             <br>
           </div>
 
+
+          <h2 class="title is-3">Finetuning</h2>
+          <p>
+            I believe that deploying robot learning algorithms to real-world tasks will require finetuning to specific
+            tasks (at least for now.)
+            In this demo I am finetuning Octo which was mainly trained on single arm robot data using image
+            observations and end-effector positions as the action space [2][3].
+            For the ALOHA simulation environment the new observation space consist of a single camera and the robot's
+            proprioception data. The new action space is joint control for bimanual interaction.
+          </p>
+          <br>
+          <h3 class="title is-4">Policy</h3>
+          <div class="content has-text-justified">
+            <p>
+              For the control policy I am deploying Octo - a widely applicable generalist policies for robotic
+              manipulation [3]. The Octo model is a transformer-based diffusion policy, pretrained on 800k robot
+              episodes from the Open X-Embodiment dataset [2]. It supports flexible task and observation definitions and
+              can be quickly finetuned to new observation and action spaces. The Octo Model Team introduced two initial
+              versions of Octo, Octo-Small (27M parameters) and Octo-Base (93M parameters).
+            </p>
+          </div>
+
           <h3 class="title is-4">Dataset</h3>
           <div class="content has-text-justified">
             <p>
-              simulated ALOHA cube handover dataset <i>aloha_sim_cube_scripted_dataset</i>
-
-              48 demonstrations
+              I am using the simulated ALOHA cube handover dataset <i>aloha_sim_cube_scripted_dataset</i>. It includes
+              48 expert demonstrations.
+              The dataset can be found here: <a
+                href="https://rail.eecs.berkeley.edu/datasets/">https://rail.eecs.berkeley.edu/datasets/</a>.
             </p>
             <div>
               <img src="/robot-learning/static/images/data_examples.gif">
@@ -223,10 +206,10 @@
           <h3 class="title is-4">Training</h3>
           <div class="content has-text-justified">
             <p>
-              The model for 25000 steps with a batch size of 128 (octo-small) and 64 (octo-base) using a TPU v3-8 pod,
+              The model was trained for 25000 steps with a batch size of 128 (Octo-Small) and 64 (Octo-Base) using a TPU v3-8 pod,
               which took around 3 hours and cost around $20 per run.
               The training history can be found here: <a
-                href="https://wandb.ai/j4nn1k/octo-finetuning">https://wandb.ai/j4nn1k/octo-finetuning</a>
+                href="https://wandb.ai/j4nn1k/octo-finetuning">https://wandb.ai/j4nn1k/octo-finetuning</a>.
               <br><br>
               (Success rate and smoothness of Action Chunking with Transformers (ACT) policies can improve way after
               loss plateaus.)
@@ -239,29 +222,32 @@
           <br>
           <h2 class="title is-3">Results</h2>
           <div class="content has-text-justified">
-            <p>Octo-Small (27M) after 25000 steps: around 70% success rate. Inference on a RTX 3070</p>
+            <p>
+              I evaluated the finetuned model on my desktop computer which used a RTX 3070 for inference. With 
+              Octo-Small I was able to achieve a success rate of around 75%.
+            </p>
             <div>
               <img src="/robot-learning/static/images/eval_examples.gif">
             </div>
           </div>
 
-          <h2 class="title is-3">Summary</h2>
+          <!-- <h2 class="title is-3">Summary</h2>
           <div class="content has-text-justified">
             <p>xxx</p>
             <br>
-          </div>
+          </div> -->
         </div>
       </div>
 
       <!-- Concurrent Work. -->
       <div class="columns is-centered">
         <div class="column is-full-width">
-          <h2 class="title is-3">Related Work</h2>
+          <h2 class="title is-3">References</h2>
 
           <div class="content has-text-justified">
-            <p>
+            <!-- <p>
               Excellent work that this project is based on:
-            </p>
+            </p> -->
             <p>
               [1] <a href="https://tonyzhaozh.github.io/aloha/">Learning Fine-Grained Bimanual Manipulation
                 with Low-Cost Hardware</a>
