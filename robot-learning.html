@@ -118,14 +118,15 @@
 
 
             <p>
-              This year after christmas I spent a few days to figure how to demonstrate what I believe
-              to be the future of general robot control: robot learning. This demonstration is combining three major breakthrougs
-              which happened in robotics in 2023. A low-cost open source
+              I spent a few days to figure how to demonstrate what I believe
+              to be the future of general robot control: robot learning. This demonstration combines three major
+              breakthroughs
+              that happened in robotics in 2023; a low-cost open source
               manipulation setup [1], the first large scale robotic dataset [2] and a powerful generalist control policy
               [3].
             </p>
             <p>
-              The Loom video provides a higher level overview and this web page highlights some of the
+              The Loom video provides an overview and below highlights some of the
               technical details. I hope you enjoy!
             </p>
           </div>
@@ -150,13 +151,13 @@
               To demonstrate the capabilities of general robot policies I chose a simulation environment based on <i>A
                 Low-cost Open-source Hardware System for Bimanual Teleoperation</i> [1].
               One of its five design principles is versatility - it can be applied to a wide range of fine manipulation
-              tasks with real-world objects. This makes a perfect playground for demonstrating robot control abilities.
+              tasks with real-world objects. This makes a perfect playground for demonstrating generalizabilty.
             </p>
           </div>
           <h3 class="title is-4">Task Definition</h3>
           <div class="content has-text-justified">
             <p>
-              For the simulated task <i>Transfer Cube</i>, the right arm needs to first pick up the red cube lying on
+              For the simulated <i>Transfer Cube</i> task, the right arm needs to first pick up the red cube lying on
               the table, then place it inside the gripper of the other arm. Due to the small clearance between the cube
               and
               the left gripper (around 1cm), small errors could result in collisions and task failure [1].
@@ -172,7 +173,7 @@
           <h2 class="title is-3">Finetuning</h2>
           <p>
             I believe that deploying robot learning algorithms to real-world tasks will require finetuning to specific
-            tasks (at least for now.)
+            tasks (at least for now).
             In this demo I am finetuning Octo which was mainly trained on single arm robot data using image
             observations and end-effector positions as the action space [2][3].
             For the ALOHA simulation environment the new observation space consist of a single camera and the robot's
@@ -206,13 +207,14 @@
           <h3 class="title is-4">Training</h3>
           <div class="content has-text-justified">
             <p>
-              The model was trained for 25000 steps with a batch size of 128 (Octo-Small) and 64 (Octo-Base) using a TPU v3-8 pod,
+              The model was trained for 25000 steps with a batch size of 128 (Octo-Small) and 64 (Octo-Base) using a TPU
+              v3-8 pod,
               which took around 3 hours and cost around $20 per run.
               The training history can be found here: <a
                 href="https://wandb.ai/j4nn1k/octo-finetuning">https://wandb.ai/j4nn1k/octo-finetuning</a>.
-              <br><br>
-              (Success rate and smoothness of Action Chunking with Transformers (ACT) policies can improve way after
-              loss plateaus.)
+              <!-- <br><br>
+              (If Success rate and smoothness of Action Chunking with Transformer (ACT) policies can improve way after
+              loss plateaus.) -->
             </p>
             <div>
               <img src="/robot-learning/static/images/training_loss.png">
@@ -223,7 +225,7 @@
           <h2 class="title is-3">Results</h2>
           <div class="content has-text-justified">
             <p>
-              I evaluated the finetuned model on my desktop computer which used a RTX 3070 for inference. With 
+              I evaluated the finetuned model on my desktop computer which used a RTX 3070 for inference. With
               Octo-Small I was able to achieve a success rate of around 75%.
             </p>
             <div>
@@ -231,13 +233,18 @@
             </div>
           </div>
 
-          <!-- <h2 class="title is-3">Summary</h2>
+          <h2 class="title is-3">Conclusion</h2>
           <div class="content has-text-justified">
-            <p>xxx</p>
+            <p>
+              In this project I demonstrated how finetuning can be used to adapt a generalist control policy to a new
+              environment. With only 48 demonstrations I was able to tune the control policy to a new observation (top
+              camera image and proprioception) and action space (bi-manual joint control).
+            </p>
             <br>
-          </div> -->
+          </div>
         </div>
       </div>
+
 
       <!-- Concurrent Work. -->
       <div class="columns is-centered">
