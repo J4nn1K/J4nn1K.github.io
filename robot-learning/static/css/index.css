@@ -1,5 +1,6 @@
 body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Inter', sans-serif;  
+  /* font-family: 'Noto Sans', sans-serif; */
 }
 
 
@@ -23,9 +24,9 @@ body {
   padding-bottom: 3rem;
 }
 
-.teaser {
+/* .teaser {
   font-family: 'Google Sans', sans-serif;
-}
+} */
 
 
 .publication-title {
@@ -47,13 +48,13 @@ body {
 .publication-header .hero-body {
 }
 
-.publication-title {
+/* .publication-title {
     font-family: 'Google Sans', sans-serif;
 }
 
 .publication-authors {
     font-family: 'Google Sans', sans-serif;
-}
+} */
 
 .publication-venue {
     color: #555;
